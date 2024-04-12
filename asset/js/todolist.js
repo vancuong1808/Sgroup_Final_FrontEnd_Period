@@ -551,9 +551,9 @@ function DragStart( event , index, object ) {
 
     let oldDay = SplitDayandMonth[2]
     oldArticle = {
-        Category: e.querySelector(".Marketing" ).textContent,
-        Title: e.querySelector(".article-title" ).textContent,
-        Content: e.querySelector(".article-content" ).textContent,
+        Category: e.querySelector(".Marketing" ).innerText,
+        Title: e.querySelector(".article-title" ).innerText,
+        Content: e.querySelector(".article-content" ).innerText,
         FullDate: {
             Day: oldDay,
             Month: oldMonth,

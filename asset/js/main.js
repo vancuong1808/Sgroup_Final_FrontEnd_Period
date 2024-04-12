@@ -108,7 +108,8 @@ log_btn.addEventListener('click', ()=>{
 .then( (reponse) => {
     if ( reponse.status === "ok" ) {
         // first_page.style.display = 'none';
-        window.location.href ="http://127.0.0.1:5500/todolist.html"
+        // window.location.href ="http://127.0.0.1:5500/todolist.html"
+        window.location.href = "https://vancuong1808.github.io/Sgroup_Final_FrontEnd_Period/todolist.html"
         emailInput.style.border ='1px solid green'
         passwordInput.style.border ='1px solid green'
         if ( remember_btn.checked ) {

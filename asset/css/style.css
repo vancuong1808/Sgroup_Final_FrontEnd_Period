@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     font-family: 'Inter';
-
+    box-sizing: border-box;
 }
 .First-page {
     display: flex;
@@ -52,8 +52,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 550px;
+    width: 750px;
+    height: 500px;
     /* width: 55%;
     height: 75%; */
     background-color: white;
