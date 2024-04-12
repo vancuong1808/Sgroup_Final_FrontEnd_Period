@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/todo.css">
+    <link rel="stylesheet" href="./asset/css/repoSecondPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter:wght@100..900&family=Noto+Sans+Khojki&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Second-page">
+        <div class="Popup-AddNewTodo-container">
+            <div class="Popup-AddNewTodo-main">
+                <div class="AddNewTodo">
+                    Add new todo
+                </div>
+                <input type="text" id="AddNewTodo-Marketing-input" placeholder="Category. ETC: Marketing...">
+                <input type="text" id="AddNewTodo-Title-input" placeholder="Title">
+                <textarea name="" id="AddNewTodo-Content-input" cols="10" rows="10" placeholder="Content"></textarea>
+                <button onclick="AddNewTask()"  id="AddNewTodo-btn"> Submit </button>
+                <p class="AddNewTodo-close"> + </p>
+            </div>
+        </div>
+        <div class="Popup-EditTodo-container">
+            <div class="Popup-EditTodo-main">
+                <div class="EditTodo">
+                    Edit todo
+                </div>
+                <input type="text" id="EditTodo-Marketing-input" placeholder="Category. ETC: Marketing...">
+                <input type="text" id="EditTodo-Title-input" placeholder="Title">
+                <textarea name="" id="EditTodo-Content-input" cols="10" rows="10" placeholder="Content"></textarea>
+                <div class="Checkbox-Area">
+                    <div class="EditTodo-Checkbox">
+                        <input type="radio" name="option" id="Todo-Checkbox">
+                        <label id="Todo-label" for="Todo-Checkbox"> Todo </label>
+                    </div>
+                    <div class="EditDoing-Checkbox">
+                        <input type="radio" name="option" id="Doing-Checkbox">
+                        <label id="Doing-label" for="Doing-Checkbox"> Doing </label>
+                    </div>
+                    <div class="EditCompleted-Checkbox">
+                        <input type="radio" name="option" id="Completed-Checkbox">
+                        <label id="Completed-label" for="Completed-Checkbox"> Completed </label>
+                    </div>
+                    <div class="EditBlocked-Checkbox">
+                        <input type="radio" name="option" id="Blocked-Checkbox">
+                        <label id="Blocked-label" for="Blocked-Checkbox"> Blocked </label>
+                    </div>
+                </div>
+                <button onclick="EditTask()" id="EditTodo-btn"> Submit </button>
+                <p class="EditTodo-close"> + </p>
+            </div>
+        </div>
+        <div class="header">
+            <img src="./asset/img/Task.png" alt="" class="Task">
+            <div class="Newtask">
+                <p> + </p>
+                <p> New task </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="Todo-list">
+                <div class="Todo-header">
+                    <div class="Todo">
+                        <span class="Todo-text">
+                            Todo
+                        </span>
+                        <div class="Todo-number Number">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="Todo-body">
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="Marketing">
+                                Marketing
+                            </div>
+                            <div class="article-logo">
+                                <img src="./asset/img/Edit.png" alt="" id="edit-logo">
+                                <img src="./asset/img/Delete.png" alt="" id="delete-logo">
+                            </div>
+                        </div>
+                        <div class="article-body">
+                            <div class="article-title">
+                                Write SEO article for new product
+                            </div>
+                        </div>
+                        <div class="article-footer">
+                            <div class="inline"></div>
+                            <div class="article-content">
+                                This is an existential moment for effective altruism and the rationalist community writ-large. 
+                            </div>
+                            <div class="article-time">
+                                <img src="./asset/img/clock.png" alt="" class="clock">
+                                <span class="time"> June 30, 2022 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-header">
+                            <div class="Marketing">
+                                Marketing
+                            </div>
+                            <div class="article-logo">
+                                <img src="./asset/img/Edit.png" alt="" id="edit-logo">
+                                <img src="./asset/img/Delete.png" alt="" id="delete-logo">
+                            </div>
+                        </div>
+                        <div class="article-body">
+                            <div class="article-title">
+                                Write SEO article for new product
+                            </div>
+                        </div>
+                        <div class="article-footer">
+                            <div class="inline"></div>
+                            <div class="article-content">
+                                This is an existential moment for effective altruism and the rationalist community writ-large. 
+                            </div>
+                            <div class="article-time">
+                                <img src="./asset/img/clock.png" alt="" class="clock">
+                                <span class="time"> June 30, 2022 </span>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="Doing-list">
+                <div class="Doing-header">
+                <div class="Doing">
+                    <span class="Doing-text">
+                        Doing
+                    </span>
+                    <div class="Doing-number Number">
+                        3
+                    </div>
+                </div>
+                </div>
+                <div class="Doing-body">
+
+                </div>
+            </div>
+            <div class="Completed-list">
+                <div class="Completed-header">
+                    <div class="Completed">
+                    <span class="Completed-text">
+                        Completed
+                    </span>
+                    <div class="Completed-number Number">
+                        3
+                    </div>
+                </div>
+                </div>
+                <div class="Completed-body">
+                </div>
+            </div>
+            <div class="Blocked-list">
+                <div class="Blocked-header">
+                <div class="Blocked">
+                    <span class="Blocked-text">
+                        Blocked
+                    </span>
+                    <div class="Blocked-number Number">
+                        3
+                    </div>
+                </div>
+                </div>
+                <div class="Blocked-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./asset/js/todolist.js"></script>
+</html>

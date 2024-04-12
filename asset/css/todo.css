@@ -1,0 +1,551 @@
+body {
+    margin: 0px;
+    font-family: 'Inter';    
+    padding: 25px 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.Second-page {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+.Task {
+    width: 120px;
+    height: 70px;
+}
+.Newtask {
+    display: flex;
+    align-content: center;
+    width: 100px;
+    margin-top: 10px;
+    height: fit-content;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.Newtask:hover {
+    cursor: pointer;
+}
+.Newtask p:nth-child(1) {
+    font-size: 26px;
+    color: #8d8e93;
+    margin: 2px 0px;
+}
+.Newtask p:nth-child(2) {
+    font-size: 16px;
+    color: #8d8e93;
+    margin: 10px 0px;
+}
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 100px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    gap: 2.6%;
+}
+.Todo-list {
+    display: flex;
+    flex-flow: column wrap;
+    width: 23%;
+    height: 100%;
+}
+.Todo-header {
+    display: flex;
+    width: 100%;
+    height: 7.5%;
+    border-bottom: 3px solid #00a6da;
+    margin-bottom: 25px;
+}
+.Todo-body {
+    width: 100%;
+    height: 85%;
+    max-height: 60%;
+    overflow-y: auto;
+}
+.Todo-body::-webkit-scrollbar {
+    width: 7px;
+}
+.Todo-body::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+.Todo-body::-webkit-scrollbar {
+    background-color: #fff;
+}
+.Todo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #00a6da;
+
+}
+.Todo-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.Todo-number {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    background-color: #00cdda;
+}
+
+.Doing-list {
+    display: flex;
+    flex-flow: column wrap;
+    width: 23%;
+    height: 100%;
+}
+.Doing-header {
+    display: flex;
+    width: 100%;
+    height: 7.5%;
+    border-bottom: 3px solid #e3d172;
+    margin-bottom: 25px;
+}
+.Doing-body {
+    width: 100%;
+    height: 85%;
+    max-height: 60%;
+    overflow-y: auto;
+}
+.Doing-body::-webkit-scrollbar {
+    width: 7px;
+}
+.Doing-body::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+.Doing-body::-webkit-scrollbar {
+    background-color: #fff;
+}
+.Doing {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #e3d172;
+
+}
+.Doing-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.Doing-number {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    background-color: #debe1a;
+}
+.Completed-list {
+    display: flex;
+    flex-flow: column wrap;
+    width: 23%;
+    height: 100%;
+}
+.Completed-header {
+    display: flex;
+    width: 100%;
+    height: 7.5%;
+    border-bottom: 3px solid #3bc057;
+    margin-bottom: 25px;
+}
+.Completed-body {
+    width: 100%;
+    height: 85%;
+    max-height: 60%;
+    overflow-y: auto;
+}
+.Completed-body::-webkit-scrollbar {
+    width: 7px;
+}
+.Completed-body::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+.Completed-body::-webkit-scrollbar {
+    background-color: #fff;
+}
+.Completed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #3bc057;
+
+}
+.Completed-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.Completed-number {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    background-color: #69ce7e;
+}
+.Blocked-list {
+    display: flex;
+    flex-flow: column wrap;
+    width: 23%;
+    height: 100%;
+}
+.Blocked-header {
+    display: flex;
+    width: 100%;
+    height: 7.5%;
+    border-bottom: 3px solid #e74c3c;
+    margin-bottom: 25px;
+}
+.Blocked-body {
+    width: 100%;
+    height: 85%;
+    max-height: 60%;
+    overflow-y: auto;
+}
+.Blocked-body::-webkit-scrollbar {
+    width: 7px;
+}
+.Blocked-body::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+.Blocked-body::-webkit-scrollbar {
+    background-color: #fff;
+}
+.Blocked {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #e74c3c;
+
+}
+.Blocked-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.Blocked-number {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    background-color: #b83527;
+}
+
+.article {
+    display: flex;
+    flex-flow: column wrap;
+    width: 98%;
+    height: 180px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    filter: drop-shadow( 0px 4px 2px rgba( 0, 0, 0, 0.2 ) );
+    font-family: 'Inter';
+    margin-bottom: 10px;
+}
+.article-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+.article-logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center;
+    width: 35%;
+    height: 90%;
+}
+.Marketing {
+    font-family: 'Inter';
+    font-size: 13.5px;  
+    color: #4d8eff;
+    height: fit-content;
+    font-weight: 600;
+    margin: 0px;
+    border-bottom: 1px solid #4d8eff;
+}
+#edit-logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#delete-logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.article-title {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 13.5px;
+    max-width: 200px;  
+}
+.article-body {
+    padding-bottom: 20px;
+}
+.article-footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
+}
+.inline {
+    width: 75%;
+    height: 1.5px;
+    background-color: #ccc;
+}
+.article-content {
+    height: 60%;
+    max-height: 60%;
+    max-width: 100%;
+    font-family: 'Inter';
+    font-size: 8.5px;
+    font-weight: light;
+    color: #696a71;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.article-content::-webkit-scrollbar {
+    width: 7px;
+    background-color: #fff;
+}
+.article-content::-webkit-scrollbar-thumb {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+.article-time {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    gap: 5px;
+    font-weight: light;
+    color: #696a71;
+}
+.Popup-AddNewTodo-container {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top : 0px;
+    left: 0px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    z-index: 99999;
+}
+.Popup-AddNewTodo-main {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    width: 30%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.AddNewTodo-close {
+    position: absolute;
+    right: 5px;
+    top: -25px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #696a71;
+    transform: rotateZ( 45deg );
+}
+.AddNewTodo-close:hover {
+    cursor: pointer;
+}
+.AddNewTodo {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+#AddNewTodo-Marketing-input {
+    border-radius: 3px;
+    border: 1px solid #00000040;
+}
+#AddNewTodo-Title-input {
+    border-radius: 3px; 
+    border: 1px solid #00000040;
+}
+#AddNewTodo-Content-input {
+    height: 50px;
+    max-height: 50px;
+    border-radius: 3px;
+    border: 1px solid #00000040;
+    overflow-y: auto;
+}
+#AddNewTodo-btn:hover {
+    cursor: pointer;
+}
+
+.Popup-EditTodo-container {
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top : 0px;
+    left: 0px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.5 );
+    z-index: 99999;
+}
+.Popup-EditTodo-main {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    width: 30%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.EditTodo-close {
+    position: absolute;
+    right: 5px;
+    top: -25px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #696a71;
+    transform: rotateZ( 45deg );
+}
+.EditTodo-close:hover {
+    cursor: pointer;
+}
+.EditTodo {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+#EditTodo-Marketing-input {
+    border-radius: 3px;
+    border: 1px solid #00000040;
+}
+#EditTodo-Title-input {
+    border-radius: 3px; 
+    border: 1px solid #00000040;
+}
+#EditTodo-Content-input {
+    height: 50px;
+    max-height: 50px;
+    border-radius: 3px;
+    border: 1px solid #00000040;
+    overflow-y: auto;
+}
+#EditTodo-btn:hover {
+    cursor: pointer;
+}
+.Checkbox-Area {
+    display: flex;
+    justify-content: space-between;
+}
+.EditTodo-Checkbox {
+    display: flex;
+    align-items: center;
+}
+#Todo-label {
+    font-size: 14px;
+}
+.EditDoing-Checkbox {
+    display: flex;
+    align-items: center;
+}
+#Doing-label {
+    font-size: 14px;
+}
+.EditCompleted-Checkbox {
+    display: flex;
+    align-items: center;
+}
+#Completed-label {
+    font-size: 14px;
+}
+.EditBlocked-Checkbox {
+    display: flex;
+    align-items: center;
+}
+#Blocked-label {
+    font-size: 14px;
+}
+.active {
+    display: flex;
+}

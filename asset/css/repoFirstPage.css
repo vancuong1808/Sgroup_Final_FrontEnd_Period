@@ -1,0 +1,159 @@
+@media screen and (max-width: 875px) {
+    .LogRes-container {
+        width: 650px;
+        height: 500px;
+    }
+    .Email-login {
+        width: 100%;
+        height: 38%;
+    }
+    .Password-login {
+        width: 100%;
+        height: 38%;
+    }
+}
+@media screen and (max-width: 715px) {
+    .LogRes-container {
+        width: 550px;
+        height: 450px;
+    }
+    .Email-login {
+        width: 100%;
+        height: 38%;
+    }
+    .Password-login {
+        width: 100%;
+        height: 38%;
+    }
+    .deco-3 {
+        bottom: 10%;
+        left: 68%;
+    }
+}
+@media screen and (max-width: 615px) {
+    .LogRes-container {
+        width: 400px;
+        height: 500px;
+    }
+    .Sgroup {
+        display: none;
+    }
+    .LogRes {
+        width: 100%;
+        height: 100%;
+    }
+    .LogAndRes {
+        display: flex;
+        width: 60%;
+        height: 5%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .LogRes-logo {
+        display: flex;
+        width: 30%;
+        height: 25%;
+    }
+    .deco-3 {
+        bottom: 7%;
+        left: 63%;
+    }
+}
+@media screen and (max-width: 435px) {
+    .LogRes-container {
+        width: 300px;
+        height: 420px;
+    }
+    .Sgroup {
+        display: none;
+    }
+    .LogRes {
+        width: 100%;
+        height: 100%;
+    }
+    .LogAndRes {
+        display: flex;
+        width: 60%;
+        height: 5%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .LogRes-logo {
+        display: flex;
+        width: 30%;
+        height: 20%;
+    }
+    .eyeOpen {
+        width: 20px;
+        height: 25px;
+    }
+    .eyeClose {
+        width: 20px;
+        height: 25px;
+    }
+    .deco-3 {
+        bottom: 14%;
+        left: 63%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .LogRes-container {
+        width: 250px;
+        height: 380px;
+    }
+    .Sgroup {
+        display: none;
+    }
+    .LogRes {
+        width: 100%;
+        height: 100%;
+    }
+    .LogAndRes {
+        display: flex;
+        width: 60%;
+        height: 5%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    .LogRes-logo {
+        display: flex;
+        width: 30%;
+        height: 20%;
+    }
+    .Email-login {
+        width: 100%;
+        height: 38%;
+    }
+    .Password-login {
+        width: 100%;
+        height: 38%;
+    }
+    .Login-form {
+        width: 60%;
+        height: 49%;
+    }
+    .Login {
+        font-size: 12.5px;
+    }
+    .Register {
+        font-size: 12.5px;
+    }
+    .Email-login-text {
+        font-size: 12.5px;
+    }
+    .Password-login-text {
+        font-size: 12.5px;
+    }
+    .eyeOpen {
+        width: 20px;
+        height: 20px;
+    }
+    .eyeClose {
+        width: 20px;
+        height: 20px;
+    }
+    .deco-3 {
+        bottom: 17%;
+        left: 62%;
+    }
+}
