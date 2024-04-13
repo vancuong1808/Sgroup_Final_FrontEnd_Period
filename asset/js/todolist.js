@@ -543,13 +543,16 @@ var eventDrag = {
 }
 function DragStart( event , index, object ) {
     let e = event.target
-    let FullDay = e.querySelector(".time" ).textContent;
+    let FullDay = e.querySelector(".time" ).innerText;
+    // console.log( FullDay )
     let SplitFullDay = FullDay.split(", ")
+    // console.log( SplitFullDay )
     let SplitDayandMonth = SplitFullDay[0].split(" ")
+    // console.log( SplitDayandMonth )
     let oldYear = SplitFullDay[1]
-    let oldMonth = changeMonth.indexOf( SplitDayandMonth[1] ) + 1
-
-    let oldDay = SplitDayandMonth[2]
+    let oldMonth = changeMonth.indexOf( SplitDayandMonth[0] ) + 1
+    let oldDay = SplitDayandMonth[1]
+    // console.log( oldYear, oldMonth, oldDay )
     oldArticle = {
         Category: e.querySelector(".Marketing" ).innerText,
         Title: e.querySelector(".article-title" ).innerText,
