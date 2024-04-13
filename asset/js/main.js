@@ -10,7 +10,8 @@ let loading_bg = document.querySelector('.background-loading')
 let eyeClose = document.querySelector('.eyeClose')
 let eyeOpen = document.querySelector('.eyeOpen')
 let REMEMBER = false;
-
+let checkEmail = false;
+let checkPassword = false;
 // thuc hien remember
 if ( localStorage.getItem('remember') ) {
     remember_btn.checked = JSON.parse( localStorage.getItem('remember') )
@@ -75,18 +76,21 @@ eyeOpen.addEventListener('click', ()=>{
 log_btn.addEventListener('click', ()=>{
     console.log( remember_btn.checked )
     let Login = getLogin()
-    if ( Login.login === '' || Login.password === '' ) {
-        console.log( emailInput, passwordInput )
+    if ( Login.login === '' ) {
         emailInput.style.border ='1px solid rgb(245, 89, 89)'
-        passwordInput.style.border ='1px solid rgb(245, 89, 89)'
         ErrorEmail.classList.add('active')
-        ErrorPassword.classList.add('active')
-        return
     } else {
-        emailInput.style.border ='1px solid green'
-        passwordInput.style.border ='1px solid green'
         ErrorEmail.classList.remove('active')
+        checkEmail = true;
+    }
+    if ( Login.password === '' ) {
+        passwordInput.style.border ='1px solid rgb(245, 89, 89)'
+        ErrorPassword.classList.add('active')
+    } else {
         ErrorPassword.classList.remove('active')
+        checkPassword = true;
+    }
+    if ( checkEmail && checkPassword ) {
         loading_bg.style.display = 'block';
         loading.style.display = 'block';
     }
