@@ -1,60 +1,50 @@
 var Todo = [
-    {
-        Category: "",
-        Title: "",
-        Content: "",
-        FullDate: {
-            Day: 3,
-            Month: 2,
-            Year: 2024
-        }
-    }
+    // {
+    //     Category: "",
+    //     Title: "",
+    //     Content: "",
+    //     FullDate: {
+    //         Day: 3,
+    //         Month: 2,
+    //         Year: 2024
+    //     }
+    // }
 ]
 var Doing = [
-    {
-        Category: "",
-        Title: "",
-        Content: "",
-        FullDate: {
-            Day: 3,
-            Month: 2,
-            Year: 2024
-        }
-    }, 
-    {
-        Category: "",
-        Title: "",
-        Content: "",
-        FullDate: {
-            Day: 3,
-            Month: 2,
-            Year: 2024
-        }
-    }
+    // {
+    //     Category: "",
+    //     Title: "",
+    //     Content: "",
+    //     FullDate: {
+    //         Day: 3,
+    //         Month: 2,
+    //         Year: 2024
+    //     }
+    // }
 ]
 var Completed = [
-    {
-        Category: "",
-        Title: "",
-        Content: "",
-        FullDate: {
-            Day: 3,
-            Month: 2,
-            Year: 2024
-        }
-    }
+    // {
+    //     Category: "",
+    //     Title: "",
+    //     Content: "",
+    //     FullDate: {
+    //         Day: 3,
+    //         Month: 2,
+    //         Year: 2024
+    //     }
+    // }
 ]
 var Blocked = [
-    {
-        Category: "",
-        Title: "",
-        Content: "",
-        FullDate: {
-            Day: 3,
-            Month: 2,
-            Year: 2024
-        }
-    }
+    // {
+    //     Category: "",
+    //     Title: "",
+    //     Content: "",
+    //     FullDate: {
+    //         Day: 3,
+    //         Month: 2,
+    //         Year: 2024
+    //     }
+    // }
 ]
 
 let Month = {
