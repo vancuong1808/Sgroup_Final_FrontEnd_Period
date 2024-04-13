@@ -146,7 +146,7 @@ EditClose.addEventListener('click', ()=>{
 })
 
 MarketingInput.addEventListener('input', ()=>{
-    console.log( MarketingInput.value )
+    // console.log( MarketingInput.value )
     if ( MarketingInput.value != "" ) {
         MarketingInput.style.border = '2px solid #74E291';
         MarketingInputCheck = true;
@@ -167,7 +167,7 @@ TitleInput.addEventListener('input', ()=>{
     // console.log( TitleInputCheck )
 })
 ContentInput.addEventListener('input', ()=>{
-    console.log( ContentInput.value )
+    // console.log( ContentInput.value )
     if( ContentInput.value != "" ) {
         ContentInput.style.border = '2px solid #74E291';
         ContentInputCheck = true;
@@ -178,7 +178,7 @@ ContentInput.addEventListener('input', ()=>{
     // console.log( ContentInputCheck )
 })
 EditMarketingInput.addEventListener('input', ()=>{
-    console.log( EditMarketingInput.value )
+    // console.log( EditMarketingInput.value )
     if ( EditMarketingInput.value != "" ) {
         EditMarketingInput.style.border = '2px solid #74E291';
         EditMarketingInputCheck = true;
@@ -199,7 +199,7 @@ EditTitleInput.addEventListener('input', ()=>{
     // console.log( TitleInputCheck )
 })
 EditContentInput.addEventListener('input', ()=>{
-    console.log( EditContentInput.value )
+    // console.log( EditContentInput.value )
     if( EditContentInput.value != "" ) {
         EditContentInput.style.border = '2px solid #74E291';
         EditContentInputCheck = true;
@@ -233,7 +233,7 @@ function AddNewTask() {
         })
         localStorage.setItem("Todo", JSON.stringify(Todo));
         Render();
-        console.log( Todo, Todo.length )
+        // console.log( Todo, Todo.length )
         PopupAddContainer.classList.toggle('active');
     } else {
         if ( !MarketingInputCheck ) {
@@ -273,7 +273,7 @@ function OpenTask( index, object ) {
     let DoingChange = radios[1];
     let CompletedChange = radios[2];
     let BlockedChange = radios[3];
-    console.log( TodoChange, DoingChange, CompletedChange, BlockedChange )
+    // console.log( TodoChange, DoingChange, CompletedChange, BlockedChange )
     if ( object == "Todo" ) {
         TodoChange.checked = true;
     } else if( object == "Doing" ) {
@@ -287,9 +287,9 @@ function OpenTask( index, object ) {
     Tag.index = index;
     let arr = window[object];
     let item  =  arr[index];
-    console.log( arr )
-    console.log( item )
-    console.log( object )
+    // console.log( arr )
+    // console.log( item )
+    // console.log( object )
     EditMarketingInput.value = item.Category;
     EditTitleInput.value = item.Title;
     EditContentInput.value = item.Content;

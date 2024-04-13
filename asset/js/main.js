@@ -74,7 +74,7 @@ eyeOpen.addEventListener('click', ()=>{
 
 // xu li dummy call api
 log_btn.addEventListener('click', ()=>{
-    console.log( remember_btn.checked )
+    // console.log( remember_btn.checked )
     let Login = getLogin()
     if ( Login.login === '' ) {
         emailInput.style.border ='1px solid rgb(245, 89, 89)'
