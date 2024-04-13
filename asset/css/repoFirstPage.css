@@ -5,11 +5,18 @@
     }
     .Email-login {
         width: 100%;
-        height: 38%;
+        height: 30%;
     }
     .Password-login {
         width: 100%;
-        height: 38%;
+        height: 30%;
+    }
+    .Login-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 50%;
     }
 }
 @media screen and (max-width: 715px) {
@@ -19,15 +26,22 @@
     }
     .Email-login {
         width: 100%;
-        height: 38%;
+        height: 30%;
     }
     .Password-login {
         width: 100%;
-        height: 38%;
+        height: 30%;
     }
     .deco-3 {
         bottom: 10%;
         left: 68%;
+    }
+    .Login-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 55%;
     }
 }
 @media screen and (max-width: 615px) {
@@ -42,6 +56,13 @@
         width: 100%;
         height: 100%;
     }
+    .Login-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 50%;
+    }
     .LogAndRes {
         display: flex;
         width: 60%;
@@ -53,6 +74,14 @@
         display: flex;
         width: 30%;
         height: 25%;
+    }
+    .Email-login {
+        width: 100%;
+        height: 30%;
+    }
+    .Password-login {
+        width: 100%;
+        height: 30%;
     }
     .deco-3 {
         bottom: 7%;
@@ -70,6 +99,13 @@
     .LogRes {
         width: 100%;
         height: 100%;
+    }
+    .Login-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 60%;
     }
     .LogAndRes {
         display: flex;
@@ -108,12 +144,19 @@
         width: 100%;
         height: 100%;
     }
+    .Login-form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 65%;
+    }
     .LogAndRes {
         display: flex;
         width: 60%;
         height: 5%;
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
     .LogRes-logo {
         display: flex;
@@ -122,11 +165,19 @@
     }
     .Email-login {
         width: 100%;
-        height: 38%;
+        height: 35%;
+    }
+    .ErrorEmail {
+        font-size: 7.5px;
+        margin-top: 2px;
     }
     .Password-login {
         width: 100%;
-        height: 38%;
+        height: 35%;
+    }
+    .ErrorPassword {
+        font-size: 7.5px;
+        margin-top: 2px;
     }
     .Login-form {
         width: 60%;
@@ -155,5 +206,14 @@
     .deco-3 {
         bottom: 17%;
         left: 62%;
+    }
+    .check-box {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        padding-bottom: 25px;
+        box-sizing: border-box;
     }
 }
