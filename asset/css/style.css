@@ -29,8 +29,8 @@ body {
 }
 .deco-3 {
     position: absolute;
-    bottom: 5%;
-    left: 70%;
+    bottom: 3%;
+    left: 68%;
     z-index: -1;
 }
 .loading-svg {
